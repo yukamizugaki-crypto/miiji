@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="埼玉県深谷市の海南風チキンライスとオムライスのお店「みーじ」。地産地消にこだわった新鮮食材で、温かいひとときをご提供します。">
+  <meta name="keywords" content="みーじ,海南風チキンライス,オムライス,深谷,ランチ,ディナー,居酒屋,地産地消">
+  <meta property="og:title" content="みーじ｜深谷市 海南風チキンライスとオムライスのお店">
+  <meta property="og:description" content="埼玉県深谷市。地産地消にこだわった新鮮食材で、温かいひとときをご提供します。">
+  <meta property="og:type" content="website">
+  <title>みーじ｜深谷市 海南風チキンライスとオムライスのお店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== OPENING LOADER ===== -->
+  <div id="opening-loader">
+    <div class="loader-content">
+      <img src="img/ロゴ.png" alt="みーじ" class="loader-logo">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="header-logo" id="header-logo-link">
+        <img src="img/ロゴ.png" alt="みーじ" id="header-logo-img">
+      </a>
+      <nav class="header-nav" id="header-nav">
+        <ul>
+          <li><a href="#about" class="nav-link">みーじについて</a></li>
+          <li><a href="#menu" class="nav-link">メニュー</a></li>
+          <li><a href="#hours" class="nav-link">営業時間</a></li>
+          <li><a href="#reserve" class="nav-link">ご予約</a></li>
+          <li><a href="#access" class="nav-link">アクセス</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="#about" class="mobile-nav-link">みーじについて</a></li>
+        <li><a href="#menu" class="mobile-nav-link">メニュー</a></li>
+        <li><a href="#hours" class="mobile-nav-link">営業時間</a></li>
+        <li><a href="#reserve" class="mobile-nav-link">ご予約</a></li>
+        <li><a href="#access" class="mobile-nav-link">アクセス</a></li>
+        <li class="mobile-sns-item">
+          <a href="https://www.instagram.com/miiji0209/" target="_blank" rel="noopener noreferrer" class="mobile-sns-btn sns-instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/miiji.jp/" target="_blank" rel="noopener noreferrer" class="mobile-sns-btn sns-facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="top" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="img/ロゴ.png" alt="みーじ ロゴ" class="hero-logo" id="hero-logo">
+      </div>
+      <div class="hero-text-block">
+        <p class="hero-tagline">深谷の味、ここにあり。</p>
+        <h1 class="hero-subtitle">海南風チキンライス&amp;ふわっとオムライス</h1>
+        <p class="hero-desc">地産地消にこだわり、深谷の恵みを丁寧に。<br>いつ来ても「ただいま」と言いたくなるお店です。</p>
+        <div class="hero-cta-group">
+          <a href="tel:050-3553-2358" class="btn btn-primary" id="hero-tel-btn">
+            予約する&nbsp;050-3553-2358
+          </a>
+          <a href="#about" class="btn btn-outline" id="hero-about-btn">お店を知る</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== CONCEPT STRIP ===== -->
+  <div class="concept-strip">
+    <div class="concept-strip-inner">
+      <span class="strip-item">地産地消</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">深谷産食材</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">アットホーム</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">海南風チキンライス</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">ふわっとオムライス</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">貸切OK</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">地産地消</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">深谷産食材</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">アットホーム</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">海南風チキンライス</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">ふわっとオムライス</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-item">貸切OK</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">みーじについて</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card greeting-card fade-in">
+          <div class="about-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M20 38c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3 class="about-card-title">店主からのご挨拶</h3>
+          <p class="about-card-text">
+            生まれ育った深谷の地でオープンさせて頂きました。<br><br>
+            皆様に憩いで…楽しみで…懐かしく…<br>
+            そんな居場所になれたら幸いです。<br><br>
+            皆様の「美味しい〜」の声がたくさん聞こえて来ますよう、精進してまいります。<br>
+            どうぞ宜しくお願い致します。
+          </p>
+          <p class="about-signature">みーじ 店主より</p>
+        </div>
+
+        <div class="about-card commitment-card fade-in">
+          <div class="about-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+              <path d="M32 8C18.745 8 8 18.745 8 32s10.745 24 24 24 24-10.745 24-24S45.255 8 32 8z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="about-card-title">当店のこだわり</h3>
+          <p class="about-card-text">
+            お店で使用する鶏肉、玉子、お米、野菜などの食材は<strong>全て「地産地消」を優先</strong>し、自然に恵まれた深谷市で生産された新鮮な食材を積極的に使用しています。
+          </p>
+          <ul class="commitment-list">
+            <li>
+              <span class="commit-label">ライス</span>
+              <span class="commit-detail">「彩のかがやき」×「ジャスミンライス」をブレンドし、みーじ特製のタネで炊き上げました。</span>
+            </li>
+            <li>
+              <span class="commit-label">タレ</span>
+              <span class="commit-detail">深谷ねぎのネギ油・タイ産唐辛子・国産レモンを使ったしょうゆ/チリ/レモンの特製三種タレ。</span>
+            </li>
+            <li>
+              <span class="commit-label">鶏肉</span>
+              <span class="commit-detail">深谷市内で丁寧に育てられた地鶏を厳選。鮮度と旨みを最大限に引き出します。</span>
+            </li>
+          </ul>
+          <p class="commitment-note">…限りなく地元の恵みを皆様の食卓へ。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Menu</span>
+        <h2 class="section-title">代表的なメニュー</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="menu-slider-outer fade-in">
+
+        <div class="menu-slider" id="menu-slider">
+          <!-- Item 1 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/chicken_boil.jpg" alt="チキンライス（ボイル）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">チキンライス（ボイル）</h3>
+              <p class="menu-item-desc">「彩のかがやき」と「ジャスミンライス」をブレンドした特製ライスと、しっとり蒸し鶏に3種のこだわりタレを添えて。</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/chicken_fried.jpg" alt="チキンライス（フライ）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">チキンライス（フライ）</h3>
+              <p class="menu-item-desc">特製タネで炊いたライスに、サクサクに揚げたジューシーなフライドチキンをオン。ボリューム満点の一品です。</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/omelet_plane.jpg" alt="オムライス（プレーン）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">オムライス（プレーン）</h3>
+              <p class="menu-item-desc">深谷産の新鮮たまごをたっぷり使用した、シンプルながらお口の中でとろけるふわふわ食感の定番オムライス。</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/omelet_tomato.jpg" alt="オムライス（トマト）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">オムライス（トマトソース）</h3>
+              <p class="menu-item-desc">ふわふわオムライスに、爽やかな酸味と旨味がギュッと詰まった特製トマトソースをたっぷりかけました。</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/omelet_curry.jpg" alt="オムライス（カレー）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">オムライス（カレーソース）</h3>
+              <p class="menu-item-desc">スパイシーでコク深いカレーと、とろ〜りまろやかな卵が絶妙にマッチした、食欲をそそる一品です。</p>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/omelet_w.jpg" alt="オムライス（Wソース）" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">オムライス（Wソース）</h3>
+              <p class="menu-item-desc">トマトソース of 酸味とカレー of コク、2種類の美味しさを一度に楽しめる贅沢なダブルソース仕様。</p>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/curry_rice.jpg" alt="カレーライス" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">特製カレーライス</h3>
+              <p class="menu-item-desc">じっくり煮込んでスパイスの香りを引き出した、コク深く味わい豊かな特製カレーライス。</p>
+            </div>
+          </div>
+          <!-- Item 8 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/curry_roti.jpg" alt="カレー＆ロティ" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">カレー＆ロティ</h3>
+              <p class="menu-item-desc">外はパリッ、中はモチッとした焼きたてアジアンデニッシュ「ロティ」をスパイシーなカレーにつけて。</p>
+            </div>
+          </div>
+          <!-- Item 9 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/curry_doria.jpg" alt="カレードリア" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">あつあつカレードリア</h3>
+              <p class="menu-item-desc">特製カレーライスにたっぷりチーズをのせて、オーブンで香ばしく焼き上げたアツアツの人気メニュー。</p>
+            </div>
+          </div>
+          <!-- Item 10 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/takkanmari.jpg" alt="タッカンマリ" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">タッカンマリ（※要予約）</h3>
+              <p class="menu-item-desc">コラーゲンたっぷり！特製スープで丸鶏一羽を豪快に煮込んだ韓国風の水炊き鍋です。（3〜5人前）</p>
+            </div>
+          </div>
+          <!-- Item 11 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/stir_tomato_shrimp.jpg" alt="トマト海老のナンプラー炒め" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">トマト海老のナンプラー炒め</h3>
+              <p class="menu-item-desc">ぷりぷりの海老とみずみずしいトマトを、旨味あふれるナンプラー（魚醤）でサッと炒めました。</p>
+            </div>
+          </div>
+          <!-- Item 12 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="img/yum_salad.jpg" alt="みーじ風ヤムウンセン" class="menu-item-img">
+            </div>
+            <div class="menu-info">
+              <h3 class="menu-item-name">みーじ風ヤムウンセン</h3>
+              <p class="menu-item-desc">パクチーの爽やかな風味と唐辛子の辛味がクセになる、具だくさんなタイ風の温製春雨サラダです。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls Bottom (Arrows and Counter) -->
+        <div class="slider-controls-bottom">
+          <button class="slider-arrow-bottom prev-arrow" id="menu-prev" aria-label="前の料理へ">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <span class="slider-counter" id="menu-counter">1 / 12</span>
+          <button class="slider-arrow-bottom next-arrow" id="menu-next" aria-label="次の料理へ">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </button>
+        </div>
+        <p class="menu-note-bottom">※メニューについては変更になる場合もございます。詳しくはお電話にてお問い合わせください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS ===== -->
+  <section id="hours" class="section hours-section">
+    <div class="hours-bg-deco"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Hours &amp; Holiday</span>
+        <h2 class="section-title">営業時間・定休日</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="hours-grid">
+        <div class="hours-card lunch-card fade-in">
+          <div class="hours-badge">Lunch</div>
+          <p class="hours-time">11:30 <span class="hours-sep">〜</span> 14:00</p>
+          <p class="hours-lo">L.O. 13:30</p>
+          <div class="hours-days">
+            <span class="day-tag closed">月</span>
+            <span class="day-tag closed">火</span>
+            <span class="day-tag active">水</span>
+            <span class="day-tag closed">木</span>
+            <span class="day-tag active">金</span>
+            <span class="day-tag closed">土</span>
+            <span class="day-tag closed">日</span>
+          </div>
+          <p class="hours-note">水曜・金曜のみ営業</p>
+          <p class="hours-reserve">ランチは完全予約制</p>
+        </div>
+
+        <div class="hours-card dinner-card fade-in">
+          <div class="hours-badge">Dinner</div>
+          <p class="hours-time">18:00 <span class="hours-sep">〜</span> 23:00</p>
+          <p class="hours-lo">L.O. 22:30</p>
+          <div class="hours-days">
+            <span class="day-tag active">月</span>
+            <span class="day-tag closed">火</span>
+            <span class="day-tag active">水</span>
+            <span class="day-tag active">木</span>
+            <span class="day-tag active">金</span>
+            <span class="day-tag active">土</span>
+            <span class="day-tag active">日</span>
+          </div>
+          <p class="hours-note">定休日：火曜日・年末年始</p>
+          <p class="hours-sub">早呑みもOK（要電話予約 16:00〜）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVE ===== -->
+  <section id="reserve" class="section reserve-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Reservation</span>
+        <h2 class="section-title">ご予約について</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="reserve-wrap fade-in">
+        <div class="reserve-main">
+          <div class="reserve-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12h20a4 4 0 0 1 4 4v8H18v-8a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M12 24h40v24a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 36h16M24 44h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="reserve-title">ご予約はお電話にて承ります</h3>
+          <p class="reserve-tel-label">予約専用電話</p>
+          <a href="tel:050-3553-2358" class="reserve-tel" id="reserve-tel-link">050-3553-2358</a>
+          <p class="reserve-msg">
+            お客様のご予算・ご希望に応じて<br>
+            オリジナルパーティー・忘年会・新年会などの<br>
+            ご宴会を承っております。
+          </p>
+          <div class="reserve-capacity">
+            <span class="capacity-badge">2名様〜16名様</span>
+            <span class="capacity-sep">／</span>
+            <span class="capacity-note">貸切も承ります</span>
+          </div>
+          <p class="reserve-attention">ランチは完全予約制となっております。お気軽にお電話ください。</p>
+        </div>
+      </div>
+
+      <!-- SNS -->
+      <div class="sns-row fade-in">
+        <p class="sns-label">SNSでも最新情報をお届けしています</p>
+        <div class="sns-links">
+          <a href="https://www.instagram.com/miiji0209/" target="_blank" rel="noopener noreferrer" class="sns-btn sns-instagram" id="sns-instagram-link" aria-label="Instagramを開く">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/miiji.jp/" target="_blank" rel="noopener noreferrer" class="sns-btn sns-facebook" id="sns-facebook-link" aria-label="Facebookを開く">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACCESS ===== -->
+  <section id="access" class="section access-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Access</span>
+        <h2 class="section-title">アクセス</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="access-grid">
+        <div class="access-map-wrap fade-in">
+          <iframe
+            id="google-map"
+            title="みーじ Google マップ"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.924846726487!2d139.2773029!3d36.1925108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601edbd88862098f%3A0x537bcf658dc767e9!2zmiijiKuOBv-ODvOOBmA!5e0!3m2!1sja!2sjp!4v1718876400000!5m2!1sja!2sjp"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="access-info fade-in">
+          <div class="access-logo">
+            <img src="img/ロゴ.png" alt="みーじ" class="access-logo-img">
+          </div>
+          <ul class="access-detail-list">
+            <li class="access-detail-item">
+              <span class="access-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                </svg>
+              </span>
+              <div>
+                <p class="access-detail-label">住所</p>
+                <p class="access-detail-value">〒366-0821<br>埼玉県深谷市西島町3-5-6</p>
+              </div>
+            </li>
+            <li class="access-detail-item">
+              <span class="access-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                </svg>
+              </span>
+              <div>
+                <p class="access-detail-label">電話番号</p>
+                <a href="tel:050-3553-2358" class="access-tel" id="access-tel-link">050-3553-2358</a>
+              </div>
+            </li>
+            <li class="access-detail-item">
+              <span class="access-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" fill="currentColor"/>
+                </svg>
+              </span>
+              <div>
+                <p class="access-detail-label">営業時間</p>
+                <p class="access-detail-value">
+                  <strong>ランチ</strong> 11:30〜14:00（L.O.13:30）<br>
+                  <span class="hours-days-inline">水・金</span><br>
+                  <strong>ディナー</strong> 18:00〜23:00（L.O.22:30）<br>
+                  <span class="hours-days-inline">月・水・木・金・土・日</span>
+                </p>
+              </div>
+            </li>
+            <li class="access-detail-item">
+              <span class="access-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" fill="currentColor"/>
+                </svg>
+              </span>
+              <div>
+                <p class="access-detail-label">定休日</p>
+                <p class="access-detail-value">火曜日・年末年始<br><span class="closed-note">（ランチは水・金曜日のみ営業）</span></p>
+              </div>
+            </li>
+          </ul>
+          <a href="https://www.google.com/maps/place/miiji*%E3%81%BF%E3%83%BC%E3%81%98/@36.1925108,139.2798778,17z/data=!3m1!4b1!4m6!3m5!1s0x601edbd88862098f:0x537bcf658dc767e9!8m2!3d36.1925108!4d139.2798778!16s%2Fg%2F11h_7691zv?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-map" id="google-maps-btn">
+            Google マップで開く
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="img/ロゴ_original.png" alt="みーじ" class="footer-logo-img">
+        <p class="footer-tagline">深谷の恵みを、あなたの食卓へ。</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#about">みーじについて</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#hours">営業時間</a></li>
+          <li><a href="#reserve">ご予約</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
+      <div class="footer-sns">
+        <a href="https://www.instagram.com/miiji0209/" target="_blank" rel="noopener noreferrer" class="footer-sns-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/miiji.jp/" target="_blank" rel="noopener noreferrer" class="footer-sns-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 みーじ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Instagram Floating Button -->
+  <a href="https://www.instagram.com/miiji0209/" target="_blank" rel="noopener noreferrer" class="instagram-float-btn" id="instagram-float-btn" aria-label="Instagramで最新情報を見る">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </svg>
+  </a>
+
+  <!-- Page Top Button -->
+  <a href="#top" class="page-top-btn" id="page-top-btn" aria-label="ページトップへ">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
